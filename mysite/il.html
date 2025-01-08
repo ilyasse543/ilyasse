@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع البيانات</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        label, input {
+            margin: 10px;
+        }
+        input[type="text"], input[type="number"] {
+            padding: 8px;
+            width: 250px;
+            border: 1px solid #fff;
+            background-color: #333;
+            color: white;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>من فضلك، قم بإدخال بياناتك</h2>
+    <form action="#" method="post">
+        <label for="first_name">الاسم الأول:</label>
+        <input type="text" id="first_name" name="first_name" placeholder="أدخل اسمك الأول هنا" required>
+        
+        <label for="last_name">الاسم الأخير:</label>
+        <input type="text" id="last_name" name="last_name" placeholder="أدخل اسمك الأخير هنا" required>
+        
+        <label for="age">ادخل عمرك:</label>
+        <input type="number" id="age" name="age" placeholder="أدخل عمرك هنا" required>
+        
+        <label for="city">ادخل مدينتك:</label>
+        <input type="text" id="city" name="city" placeholder="أدخل مدينتك هنا" required>
+        
+        <label for="mother_name">ادخل اسم أمك:</label>
+        <input type="text" id="mother_name" name="mother_name" placeholder="أدخل اسم أمك هنا" required>
+        
+        <label for="father_name">ادخل اسم والدك:</label>
+        <input type="text" id="father_name" name="father_name" placeholder="أدخل اسم والدك هنا" required>
+        
+        <input type="submit" value="إرسال">
+    </form>
+</body>
+</html>
